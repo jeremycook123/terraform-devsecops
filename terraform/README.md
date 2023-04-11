@@ -13,3 +13,5 @@ https://github.com/cloudacademy/terraform-aws/tree/main/exercises/exercise1
 ├── terraform.tfvars
 └── variables.tf
 ```
+
+version 1.0
