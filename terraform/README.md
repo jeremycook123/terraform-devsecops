@@ -14,4 +14,4 @@ https://github.com/cloudacademy/terraform-aws/tree/main/exercises/exercise1
 └── variables.tf
 ```
 
-version 1.2
+version 1.3
