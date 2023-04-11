@@ -5,6 +5,11 @@ terraform {
       version = "3.66.0"
     }
   }
+  backend "s3" {
+    bucket = "ca-devsecops-terraform-state"
+    key    = "state"
+    region = "us-west-2"
+  }
 }
 
 provider "aws" {
