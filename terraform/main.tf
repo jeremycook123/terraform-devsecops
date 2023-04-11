@@ -131,6 +131,7 @@ echo fin v1.00!
 EOF
 
   tags = {
-    Name = "CloudAcademy"
+    Name    = "CloudAcademy"
+    Feature = "v1"
   }
 }
