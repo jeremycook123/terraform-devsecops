@@ -140,6 +140,6 @@ EOF
 
   tags = {
     Name    = "CloudAcademy"
-    Feature = "v11"
+    Feature = "v12"
   }
 }
