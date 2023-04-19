@@ -103,7 +103,7 @@ jobs:
           APP_URL=$(terraform output web_instance_public_ip)
           echo $APP_URL
           echo "APP_URL=$APP_URL" >> $GITHUB_ENV
-          curl -s -o /dev/null --connect-timeout 5 --max-time 10 --retry 5 --retry-delay 0 --retry-max-time 60 $APP_URL
+          until [[ $(curl -s -o /dev/null -I -w "%{http_code}" $APP_URL) -eq 200 ]]; do sleep 5; done
 
       - name: ZAP Scan
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
